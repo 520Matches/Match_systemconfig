@@ -2,6 +2,12 @@
 #chsh -s `which zhs`
 #
 
+export LC_ALL=zh_CN.UTF-8
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+
 while true; do
 	xsetroot -name "$( date )"
 	sleep 1s
@@ -9,7 +15,7 @@ done &
 
 exec fcitx &
 
-exec feh --bg-scale ~/imag/background.jpg &
+exec feh --bg-scale ~/images/background3.jpg &
 exec compton -b &
 
 exec dwm
