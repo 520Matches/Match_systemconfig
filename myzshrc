@@ -104,3 +104,4 @@ export EDITOR="vim"
 bindkey -v
 
 alias fzf="fzf --preview 'cat {}' --bind 'f1:execute(vim {})'"
+alias fzfcd="cd \$(find * -type d | fzf)"
