@@ -1,0 +1,24 @@
+
+#chsh -s `which zhs`
+#
+
+export LC_ALL=zh_CN.UTF-8
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
+while true; do
+	xsetroot -name "$( date )"
+	sleep 1s
+done &
+
+exec fcitx &
+
+exec feh --bg-scale ~/images/background1.png &
+exec compton -b &
+
+exec dwm
