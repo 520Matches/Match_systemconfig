@@ -103,5 +103,5 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR="nvim"
 bindkey -v
 
-alias fzf="fzf --preview 'cat {}' --bind 'f1:execute(vim {})'"
+alias fzf="fzf --preview 'cat {}' --bind 'f1:execute(nvim {})'"
 alias fzfcd="cd \$(find * -type d | fzf)"
