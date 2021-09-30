@@ -4,7 +4,9 @@
 
 export LC_ALL=zh_CN.UTF-8
 
-export GTK_IM_MODULE=fcitx5
+# export GTK_IM_MODULE=fcitx5
+# 支持浏览器中文输入就需要xim参数
+export GTK_IM_MODULE=xim
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
 
